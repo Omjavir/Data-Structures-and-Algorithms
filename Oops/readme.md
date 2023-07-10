@@ -7,7 +7,7 @@ Notes :
 -> There are three access modifiers 
     > Private : Can only be accessed inside the class 
     > Public : Can be accessed anywhere 
-    > Protected
+    > Protected : Similar to private and can be accessed in the class and its child / derived classes.
 
 -> How to access private members outside the class 
     > Getter Functions 
@@ -29,13 +29,26 @@ Notes :
         c. Copy constructor 
     > Definition : A constructor is a special type of function called to create an object. Whenever a object is created a constructor is called automatically
     > Scope : 
-        cout << "Hi"<<endl;
-        Hero om;
-        cout <<"Hello"<<endl;
+    `   class Hero{
+        public:
+            Hero(){
+                cout <<"Constructor called << endl;
+            }
+        };
+
+        int main(){
+            cout << "Hi"<<endl;
+            Hero om;
+            cout <<"Hello"<<endl;
+            return 0;
+        }
+
         Output :
             1. Hi
             2. Constructor Called
             3. Hello
+    `
+
     > Default constructor vs created constructor
         Default constructor will disappear when we create a new custom constructor and then we'll have to pass a parameter when creating a new object.
         > Default constructr : 
@@ -96,3 +109,43 @@ Notes :
 -> Static Functions
     > "this" keyword is not used in static functions because "this" keyword is the pointer to the current object
     > Static functions can only access static members
+
+-> Encapsulation
+    > Used for Data Hiding
+    > Wrapping up the data members and functions
+    > Advantages
+        > Data hiding
+        > Can make class "read only"
+        > code readibility
+        > Helps in unit testing
+    > Example : 
+        `
+        class Hero{
+            private:
+                string name;
+                int age;
+            public:
+                void setAge(int age){
+                    this->age = age;
+                }
+                void getAge(){
+                    return this->age;
+                }
+        };
+        `
+
+-> Inheritence
+    > Syntax 
+        class <derived/child_class_name> : <access_specifier> <base/parent_class_name>
+    > Example
+        class Male : public Human;
+    > Access Modifiers
+        ![Inheritence](https://media.geeksforgeeks.org/wp-content/cdn-uploads/table-class.png)
+    > Types :
+        > Single Inheritance :
+            
+
+        > Multi-level Inheritance
+        > Multiple Inheritance
+        > Hybrid Inheritance
+        > Hierarchical Inheritance
