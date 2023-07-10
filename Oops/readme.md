@@ -143,9 +143,23 @@ Notes :
         ![Inheritence](https://media.geeksforgeeks.org/wp-content/cdn-uploads/table-class.png)
     > Types :
         > Single Inheritance :
-            
+            E.g : class B is inheriting properties of class A.
 
         > Multi-level Inheritance
+            E.g : class C is inheriting properties of class B which means it also has inherited properties of class A.
+
+
         > Multiple Inheritance
+            E.g : class C is inheriting properties from class B and class A. 
+
         > Hybrid Inheritance
+            E.g : class B is inheriting properties of class A and class C is also inheriting properties of class A but class B cannot use the properties of class C.
+
         > Hierarchical Inheritance
+            Combination of one or more than one types of inheritance.
+
+-> Polymorphism
+    > Polymorphism refers to the ability of an object to take on many forms or have multiple behaviors. It allows objects of different classes to be treated as objects of a common base class. 
+
+-> Abstraction
+    > Abstraction is the process of simplifying complex real-world objects into their essential characteristics. It involves hiding unnecessary details and exposing only relevant information to the users. 
