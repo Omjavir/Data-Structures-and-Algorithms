@@ -45,3 +45,24 @@
     > Step 3 : Create data structure of visited nodes and parent nodes
     > Step 4 : Prepare shortest path
     > Step 5 : Reverse the ans to get the right ans
+
+-> Dijkstra's algorithm :
+    > Step 1 : Create adj list
+    > Step 2 : Create a distance array with initially value of inifinty / INT_MAX
+    > Step 3 : Create a set with pair (distanceNode, node);
+    > Step 4 : Traverse the set till it becomes empty
+    > Step 5 : Like DFS traverse the neighbours of node
+    > Step 6 : If nodeDistance + weight of neighbour is less than the distance present in the distance array of neighbour then update it and make updations.
+
+-> Prim's Algorithm (Minimum Spanning Tree) :
+    > Definition : when you convert a graph into a tree such that it contains n nodes and n - 1 edges then it is called a spanning tree and every node is reachable from other node
+    > Example : ![Spanning Tree](https://www.tutorialspoint.com/data_structures_algorithms/images/spanning_trees.jpg)
+    > 
+
+-> Bellman Ford Algorithm :
+    > Step 1 : Create a "Dist" vector
+    > Step 2 : Initialize the source with 0
+    > Step 3 : Traverse the no of "n" vertices for n - 1 times
+    > Step 4 : Traverse the edges
+    > Step 5 : If distance of source + weight to travel the next node is less than the distance of node update the distance
+    > Step 6 : return the distance of destination
