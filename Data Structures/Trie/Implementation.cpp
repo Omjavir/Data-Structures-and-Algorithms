@@ -170,7 +170,7 @@ class TrieNode
 {
 public:
     char data;
-    TrieNode *children[26];
+    TrieNode *children[26]; 
     bool isTerminal; // Is it a last node
 
     TrieNode(char data)
